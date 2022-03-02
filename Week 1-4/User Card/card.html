@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UserCard</title>
+    <!-- <link rel="stylesheet" href="header.css"> -->
+    <link rel="stylesheet" href="card.css">
+    <!-- <link rel="stylesheet" href="edu.css"> -->
+</head>
+<body>
+    <!-- this is the start of the top of the main header -->
+    <div class="headertop">
+        <div class="text">
+            <h1 class="h1top">Profile</h1>
+            <h3>Home</h3>
+            <h3>My Profile</h3>
+            <h3>Find Connections</h3>
+        </div>
+            <div class="buttonbox">
+                <button class="signout" ><strong>Sign Out</strong></button>
+            </div>
+    </div>
+    <!-- this is the end of the main header  -->
+
+    <!-- this is the beginning of user profile  -->
+    <div class="flex-container">
+        <div class="user-card">
+            <div class="header">
+                <img class="profile" src="jane-m.jpg" alt="Profileimg">
+    </div>
+    <div class="card-body">
+        <h1><span class="names">Jane Doe</span></h1>
+        <h3>
+            <img id="map" src="map-marker.png" alt="Mapmarker">Seattle
+        </h3>
+        <p class="info">Developer | Engineer | Problem Solver</p>
+        <p>Master of shadows and the Intetnet!</p>
+        <img class="gear" src="gear.png" alt="gearicon"><a href="#" onclick="swap()">edit profile</a>
+    </div>
+    </div>
+    <!-- this is the end of user profile  -->
+    <!-- this is the beginning of education info  -->
+    <div class="educationflex">
+        <div class="edubox">
+        <div class="edutitle">
+            <div class="edutitletext">Education</div>
+            <div class="eduinfo">
+                <h1 class="eduname">Coding Dojo - Full Stack Bootcamp</h1>
+                <p class="date"> Dec 2019 - Mar 2020</p>
+                <p class="edudescription">Triple black belt in Python, MERN, and C#...</p>
+        </div>
+    </div>
+    </div>
+    <!-- this is the end of education info -->
+
+    <!-- this is the start of connection request -->
+    <div class="connectionreqflex">
+        <div class="connectionreqbox">
+            <div class="connectionheader">
+                <div class="conheadernoti">2</div>
+                <div class="conheadertext">Connection Requests
+                <div class="connectionbodytext">
+                    <span class="left"><img src="todd-s.jpg" class="avatar-s" >Todd E.</span>
+                    <span class="right"><img class="circle" src="accept-circle.png" alt="Checkmark" onclick="removee(element)">
+                    <img class="circle" src="close-circle.png" alt="X" onclick="removee(element)"></span>
+    </div>
+    <div class="connectionbodytext2"><span class="left"><img src="phil-s.jpg" class="avatar-s" onclick="remove2(element2)">Phil K.</span>
+        <span class="right"><img class="circle" src="accept-circle.png" alt="Checkmark"onclick="remove2(element2)">
+            <img class="circle" src="close-circle.png" alt="X"></span>
+
+    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- this is the end of connection requests -->
+
+    <!-- this is the start of your connections -->
+    <div class="yourconnectionsflex">
+        <div class="yconnectionbox">
+            <div class="yconnectionheader">
+                <div class="yconheadernoti">500+</div>
+                <div class="yconheadertext">Your Connections</div>
+            </div>
+        <div class="yconnectionbody">
+                <div class="yconnectionbodytext">
+                    <img src="adrien-s.jpg" class="yavatar-s" >Adrien D.
+    </div>
+    <div class="yconnectionbodytext">
+        <img src="anne-s.jpg" class="yavatar-s" >Anne J.
+    </div>
+    <div class="yconnectionbodytext">
+        <img src="alayne-s.jpg" class="yavatar-s" >Alayne T.
+        </div>
+    <div class="yconnectionbodytext">
+        <img src="arry-s.jpg" class="yavatar-s" >Arry Y.
+    </div>
+    <div class="box">
+        <div class="viewmore"><a href="https://login.codingdojo.com/m/283/8971/60837">View More</a></div>
+    </div>
+        </div>
+        </div>
+    </div>
+    <script src="card.js"></script>
+    <!-- this is the end of your connections -->
+
+</body>
+</html>

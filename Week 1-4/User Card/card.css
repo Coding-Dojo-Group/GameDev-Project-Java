@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* this is the beginning of the user profile  */
+body {
+    font-family: sans-serif;
+}
+.flex-container {
+    width: 600px;
+    display: inline-block;
+    height: auto;
+    margin-left: 330px;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.user-card {
+    background-color: #fff;
+    width: 100%;
+    border: 2px gray;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* overflow: hidden; */
+    margin-bottom: 40px;
+
+}
+.header {
+    background-color: rgb(37, 182, 182);
+    height: 100px;
+    margin-bottom: 70px;
+
+}
+.profile {
+    height: 100px;
+    width: 100px;
+    margin-top: 50px;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+h1 {
+    padding-bottom: 10px;
+}
+.card-body {
+    padding-left: 10px;
+
+}
+#map {
+    height: 20px;
+    width: 15px;
+}
+.info {
+    padding-top: 10px;
+}
+.gear {
+    height: 20px;
+    width: 20px;
+    margin-top: 10px;
+    padding-right: 10px;
+}
+a {
+    color: blue;
+}
+.button {
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0);
+}
+/* this is the end of user profile  */
+
+/* This is the beginning of header top  */
+.headertop {
+    display: flex;
+    background-color: black;
+    height: 70px;
+    justify-content: space-around;
+}
+
+.text {
+    color: white;
+    display: flex;
+}
+.h1top {
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+h3 {
+    margin: 20px;
+    padding-top: 10px;
+    font-family: sans-serif;
+}
+
+.buttonbox {
+    padding-top: 25px;
+    display: inline;
+}
+.signout {
+    background-color: rgb(64, 180, 247);
+    border: 0px;
+    color: white;
+    width: 100px;
+    height: 30px;
+    font-family: sans-serif;
+}
+/* This is the end of header top  */
+
+/* this is the beginning of education info  */
+
+.educationflex {
+    display: flex;
+    width: 600px;
+    height: 300px;
+    background-color: rgb(0, 0, 0);
+}
+
+.edutitle {
+    background-color: rgb(70, 70, 70);
+    height: 50px;
+    width: 600px;
+    display: inline-block;
+    justify-content: left;
+}
+.edutitletext {
+    margin-left: 30px;
+    margin-top: 15px;
+    color: white;
+    font-family: sans-serif;
+    display: inline-block;
+    height: 50px;
+    font-size: 24px;
+    font-family: sans-serif;
+}
+
+.edubox {
+    display: flex;
+    width: 900px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.eduinfo {
+    background-color: rgb(255, 255, 255);
+    margin-left: 20px;
+}
+.eduname {
+    font-family: sans-serif;
+}
+
+.date {
+    margin: 0px;
+    color: rgb(107, 107, 107);
+    font-family: sans-serif;
+    font-size: x-large;
+    padding-left: 5px;
+}
+
+.edudescription {
+    font-family: sans-serif;
+    font-size: x-large;
+}
+/* this is the end of education info  */
+
+/* this is the beginning of connection requests  */
+
+
+.connectionreqflex {
+    display: flex;
+    position:absolute;
+    top:90px;
+    right:310px;
+}
+
+.connectionreqbox {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    width: 380px;
+    height: 200px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.connectionheader {
+    display: flex;
+    height: 60px;
+    width: 380px;
+    background-color:  rgb(70, 70, 70);
+    padding-left: 10px;
+}
+.conheadernoti {
+    background-color: rgb(212, 212, 212);
+    color: #333;
+    font-size: 20px;
+    border-radius: 12px;
+    height: 24px;
+    padding: 0 10px;
+    margin-right: 10px;
+    margin-top: 15px;
+    display: inline-block;
+}
+.conheadertext {
+    color: white;
+    font-family: sans-serif;
+    font-size: 30px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+
+.connectionbodytext {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    height: 40px;
+
+}
+.connectionbodytext2 {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    height: 40px;
+}
+
+
+.avatar-s {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    display: flex;
+}
+.space {
+    margin: 20px 0px;
+}
+
+.left, .right {
+    align-items: center;
+    display: flex;
+    padding-top: 30px;
+}
+/* this is the end of conrequeste */
+
+/* this is the start of your connections */
+
+.yourconnectionsflex {
+    display: flex;
+    position:absolute;
+    top:350px;
+    right:310px;
+}
+
+.yconnectionbox {
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+    width: 380px;
+    height: 400px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.yconnectionheader {
+    display: flex;
+    height: 60px;
+    width: 380px;
+    background-color:  rgb(70, 70, 70);
+}
+.yconheadernoti {
+    background-color: rgb(212, 212, 212);
+    color: #333;
+    font-size: 20px;
+    border-radius: 12px;
+    height: 24px;
+    padding: 0 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 15px;
+    display: inline-block;
+}
+.yconheadertext {
+    color: white;
+    font-family: sans-serif;
+    font-size: 30px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.yconnectionbody {
+    display: block;
+    height: 300px;
+    padding-top: 10px;
+}
+
+.yconnectionbodytext {
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    align-items: center;
+    height: 40px;
+}
+
+.yavatar-s {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+.ycircle {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+}
+.yspace {
+    margin: 20px 0px;
+}
+
+/* this is the end of your connections  */
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 380px;
+    margin-top: 70px;
+    box-shadow: rgb(145, 144, 144) 0px 3px 8px;
+}
+.viewmore {
+    justify-content: center;
+    font-family: sans-serif;
+}

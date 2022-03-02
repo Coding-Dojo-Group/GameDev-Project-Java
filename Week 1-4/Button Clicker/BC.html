@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="BC.css">
+    <title>Button Clicker</title>
+</head>
+<body>
+    <!-- main header start -->
+    <div class= "mainheader">
+        <div class="headerelements"><span class="mhtext">Dojonary</span>
+            <input type="search" class="searchbar" placeholder="Search...">
+            <button class="login" onclick="logout(this)">Login</button>
+        </div>
+    </div>
+<!-- main header end -->
+    <div class="row">
+        <div class="leftcol">
+            <div class="leftdesc">
+                <div class="left"><h1>ninja</h1>
+                    <p><em>noun</em></p>
+                    <span class="ninjas"><p>Plural: <em>ninjas</em></p></span>
+                    <button class="likebtn"onclick="alert('Ninja was liked!')">13 likes</button>
+                </div>
+                <div class="right">
+                    <p>A practioner skilled in the<br>
+                    <a href="https://en.wikipedia.org/wiki/Japanese_language">Japanese</a> art of <a href="https://en.wikipedia.org/wiki/Ninjutsu">ninjutsu</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="rightcol">Dojonary is defined by <strong>YOU</strong>
+            <div class="definition" onclick="remove(this)">
+                <div class="definitiontxt">Add Definition</div>
+            </div>
+        </div>
+    </div>
+    <!-- 2nd row -->
+    <div class="row">
+        <div class="leftcol">
+            <div class="leftdesc">
+                <div class="left"><h1>ninja</h1>
+                    <p><em>noun</em></p>
+                    <span class="ninjas"><p>Plural: <em>ninjas</em></p></span>
+                    <button class="likebtn"onclick="alert('Ninja was liked!')">37 likes</button>
+                </div>
+                <div class="right">
+                    <p>A <a href="https://en.wikipedia.org/wiki/Programmer">programmer</a> who brakes <br>
+                    down problems with <a href="https://en.wikipedia.org/wiki/Zen">zen</a>-like focus</p>
+                </div>
+            </div>
+        </div>
+        <div class="rightcol2">
+        </div>
+    </div>
+    <script src="BC.js"></script>
+</body>
+</html>

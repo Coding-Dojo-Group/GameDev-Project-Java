@@ -1,0 +1,74 @@
+body {
+    background-color: rgb(218, 218, 218);
+}
+h1 {
+    color: rgb(8, 8, 37);
+    font-size: 30px;
+    align-items: center;
+    margin-left: 49%;
+    display: flex;
+    font-family: sans-serif;
+}
+#container1 {
+    width: 800px;
+    height: 200px;
+    padding-bottom: 20px;
+    margin-left: 600px;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+}
+.spider {
+    height: 200px;
+    margin: 10px;
+}
+.boxer {
+    height: 200px; 
+    margin: 10px;
+}
+.dune {
+    height: 200px;
+    margin: 10px;
+}
+#container2 {
+    width: 780px;
+    height: 200px;
+    /* margin-top: 10px */
+    margin-left: 600px;
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.investigator {
+    height: 200px;
+    margin-left: 40px;
+}
+.gif {
+    height: 200px;
+    margin-right: 40px;
+}
+#container3 {
+    width: 800px;
+    height: 200px;
+    padding-bottom: 20px;
+    margin-left: 600px;
+    background-color:white;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+.troop {
+    height: 200px;
+}
+.topgun {
+    height: 200px;
+}
+.justice {
+    height: 200px;
+}
+.text {
+    display: flex;
+    margin-left: 49%;
+}

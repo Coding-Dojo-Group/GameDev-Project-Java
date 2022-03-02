@@ -1,0 +1,193 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.header {
+    margin: 0 auto;
+    display: flex;
+    width: 1050px;
+    margin-top: 10px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+    .leaf {
+    background-color: rgb(0, 199, 172);
+    margin-right: 10px;
+}
+.searchbar {
+    height: 35px;
+    width: 600px;
+    border-radius: 20px;
+    margin-left: 10px;
+    background-color: rgba(136, 136, 136, 0.247);
+}
+.searchicon {
+    position: absolute;
+    top: 27px;
+    right: 670px;
+    width: 30px;
+    height: 30px;
+}
+
+.topicons {
+    display: flex;
+}
+.topicons button {
+padding: 0;
+border: none;
+background: none;
+}
+.signin {
+    font-size: 20px;
+    font-family: sans-serif;
+    margin-left: 10px;
+}
+.cart {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+}
+
+.header-top h1 {
+    font-size: 40px;
+}
+.header2 {
+    display: inline-block;
+    margin-left: 400px;
+    width: 1000px;
+}
+
+.plant-types {
+    display: flex;
+    font-size: 20px;
+    justify-content: space-around;
+    width: 1020px;
+    margin-top: 10px;
+    font-family: sans-serif;
+}
+.line {
+    background-color: black;
+    height: 5px;
+    width: 960px;
+    margin-top: 5px;
+    margin-left: 33px;
+}
+.flowertitle {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 460px;
+    margin-bottom: 20px;
+}
+.flowertitle h1 {
+    font-family: sans-serif;
+    font-size: 40px;
+}
+.flowerbox {
+    display: flex;
+    margin: auto;
+    width: 1050px;
+    height: 325px;
+}
+.leftcolumn {
+    width: 250px;
+    background-color: rgb(0, 199, 172);
+    font-size: 35px;
+    padding: 30px;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+}
+.discover {
+    margin-top: 30px;
+    align-items: center;
+    display: flex;
+    margin-left: 50px;
+}
+.discover img {
+    height: 40px;
+    width: 40px;
+    margin-left: 5px;
+}
+
+
+.aloeflex {
+    display: inline-block;
+    width: 328px;
+    justify-content: center;
+    margin-left: 30px;
+}
+
+.aloebox {
+    background-color: rgb(0, 199, 172);
+    font-size: 30px;
+    font-family: sans-serif;
+    padding: 10px 0px;
+    color: white;
+    width: 290px;
+    margin-top: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.aloe-m {
+    width: 290px;
+    height: 200px;
+}
+.footer {
+    background-color: aquamarine;
+    display: inline-block;
+    width: 955px;
+    height: 150px;
+    margin-top: 20px;
+    margin-left: 435px;
+    padding-top: 20px;
+}
+.imgbox {
+    display: flex;
+    justify-content: space-evenly;
+    width: 960px;
+}
+.img-s {
+    width: 120px;
+    height: 100px;
+    /* margin-left: 30px; */
+}
+
+.flower {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 120px;
+}
+.caption {
+    display: block;
+    font-size: 20px;
+}
+.cookiebox {
+    display: flex;
+    width: 950px;
+    margin-top: 20px;
+    height: 100px;
+    margin-left: 435px;
+    border: 2px solid black;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.cookietext {
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.cookiebutton {
+    width: 100px;
+    height: 40px;
+    background-color: rgb(0, 199, 172);
+    color: white;
+    font-size: 20px;
+}

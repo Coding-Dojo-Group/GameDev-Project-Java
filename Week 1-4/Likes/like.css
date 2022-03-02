@@ -1,0 +1,163 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+/* main header start */
+.mainheader {
+    display: flex;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    height: 75px;
+    width: 1000px;
+    margin: auto;
+
+}
+.headerelements {
+    align-items: center;
+    justify-content: flex-start;
+    width: 1000px;
+    display: flex;
+    height: auto;
+    padding: 20px;
+}
+.mhtext{
+    font-family: sans-serif;
+    font-size: 35px;
+    color: white;
+    margin-left: 10px;
+}
+/* main header end */
+
+.feed {
+    font-size: 40px;
+    margin: auto;
+    margin-left: 44%;
+}
+
+/* this is the start of elements */
+.searchbar {
+    width: 400px;
+    height: 30px;
+}
+.login {
+    background-color: rgb(15, 200, 247);
+    color: white;
+    height: 20px;
+    width: 60px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+    border: 20px;
+}
+a {
+    color: blue;
+}
+.like {
+    background-color: rgb(250, 225, 0);
+    color: black;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px; */
+    height: 30px;
+    width: 70px;
+    border: 10%;
+    font-size: 15px;
+
+}
+/* end of elements */
+
+.row {
+    display: flex;
+    width: 1000px;
+    margin: auto;
+}
+/* start of right column */
+.rightcol {
+    margin-top: 20px;
+    padding: 20px;
+    flex: 1;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+    font-size: 40px;
+    font-family: sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+.coltxt {
+    margin-top: 20px;
+    justify-content: center;
+}
+.james {
+    margin-top: 20px;
+    justify-content: center;
+    margin-left: 40px;
+}
+.add {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.userimg {
+    justify-content: center;
+    display: flex;
+}
+.rightcol2 {
+    margin-top: 20px;
+    padding: 20px;
+    flex: 1;
+    width: 300px;
+}
+.right {
+    flex: 2;
+    font-size: 25px;
+    align-content: center;
+    padding-top: 20px;
+}
+.righttxt {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 250px;
+    margin-left: 150px;
+    margin-top: 20px;
+}
+.definition {
+    background-color: rgb(110, 192, 99);
+    font-size: 20px;
+    margin-top: 40px;
+    align-items: center;
+    display: flex;
+    height: 50px;
+    width: 300px;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+/* end of right column */
+
+/* left col start */
+.leftcol {
+    margin-top: 20px;
+    padding: 20px;
+    flex: 2;
+    width: 700px;
+    margin-left: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+.leftdesc{
+    display: flex;
+}
+.left {
+    flex: 1;
+    font-size: xx-large;
+}
+.leftinfo {
+    margin-top: 30px;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+/* left col end */
+
+h1 {
+    font-size: 40px;
+    font-family: sans-serif;
+    margin-top: 20px;
+}
+.ninjas {
+    font-size: x-large;
+}
