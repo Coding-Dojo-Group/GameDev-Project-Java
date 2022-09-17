@@ -16,7 +16,11 @@
 <meta charset="ISO-8859-1">
 <title>reserve</title>
 </head>
-<body>
-<h1>HOME PAGE</h1>
-</body>
+	<body>
+		<h1>HOME PAGE</h1>
+		<a href="/games">Your Games</a>
+		<a href="/games/community">Community</a>
+		<a href="/aboutUs">About Us</a>
+		<a href="/logout">Logout</a>
+	</body>
 </html>

@@ -20,6 +20,10 @@
 	<body>
 		<div class="container">
 	   		<h1>Specific Game</h1>
+			<a href="/games">Your Games</a>
+			<a href="/games/community">Community</a>
+			<a href="/aboutUs">About Us</a>
+			<a href="/logout">Logout</a>
 		</div>
 	</body>
 </html>

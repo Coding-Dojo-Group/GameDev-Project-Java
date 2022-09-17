@@ -20,6 +20,12 @@
 	<body>
 		<div class="container">
 	   		<h1>Your Games</h1>
+			<a href="/games">Your Games</a>
+			<a href="/games/community">Community</a>
+			<a href="/aboutUs">About Us</a>
+			<a href="/logout">Logout</a>
+			
+			<a href="/games/new">New Game</a>
 		</div>
 	</body>
 </html>

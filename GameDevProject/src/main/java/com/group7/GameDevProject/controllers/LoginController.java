@@ -79,11 +79,20 @@ public class LoginController {
     	model.addAttribute("user", userServ.findById(userId));
     	return "home.jsp";
     	}
+    
+    
+    @GetMapping("/aboutUs")
+    public String aboutUs() {
+    	
+    	return "/aboutUs.jsp";
+    }
+    
+    
     @RequestMapping("/logout")
     public String logout(HttpSession session) {
     	session.setAttribute("userId", null);
    return "redirect:/";
     }
-    	
-    }
+    
+}
     
