@@ -1,11 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<!-- c:out ; c:forEach etc. --> 
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<!-- Formatting (dates) --> 
 <%@taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
-<!-- form:form -->
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
-<!-- for rendering errors on PUT routes -->
 <%@ page isErrorPage="true" %>
 <!DOCTYPE html>
 <html>
@@ -13,7 +9,7 @@
 		<meta charset="UTF-8">
 	    <title>Your Games</title>
 	    <link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css">
-		<link rel="stylesheet" href="/css/main.css"> <!-- change to match your file/naming structure -->
+		<link rel="stylesheet" href="/css/style.css">
 	    <script src="/webjars/jquery/jquery.min.js"></script>
 	    <script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
 	</head>
@@ -26,7 +22,7 @@
       					<span class="navbar-toggler-icon"></span>
     				</button>
    					<div class="collapse navbar-collapse" id="navbarBasic">
-      					<ul class="navbar-nav me-auto mb-2 mb-xl-0 offset-8">
+      					<ul class="navbar-nav me-auto mb-2 mb-xl-0 offset-7">
         					<li class="nav-item active">
           						<a class="nav-link" aria-current="page" href="/games">Your Games</a>
         					</li>
@@ -43,7 +39,7 @@
         			</div>
 				</div>
 			</nav>
-	   		<h1>Your Games</h1>
+			<h1>Your Games</h1>
 			
 			<a href="/games/new">New Game</a>
 		</div>

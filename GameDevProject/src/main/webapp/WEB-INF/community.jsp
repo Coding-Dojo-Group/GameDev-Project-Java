@@ -26,7 +26,7 @@
       					<span class="navbar-toggler-icon"></span>
     				</button>
    					<div class="collapse navbar-collapse" id="navbarBasic">
-      					<ul class="navbar-nav me-auto mb-2 mb-xl-0 offset-8">
+      					<ul class="navbar-nav me-auto mb-2 mb-xl-0 offset-7">
         					<li class="nav-item">
           						<a class="nav-link" aria-current="page" href="/games">Your Games</a>
         					</li>
@@ -43,7 +43,7 @@
         			</div>
 				</div>
 			</nav>
-	   		<h1>Community</h1>
+			<h1>Community</h1>
 			
 		</div>
 	</body>

@@ -13,7 +13,7 @@
 		<meta charset="UTF-8">
 	    <title>[Game Title]</title>
 	    <link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css">
-		<link rel="stylesheet" href="/css/main.css"> <!-- change to match your file/naming structure -->
+		<link rel="stylesheet" href="/css/style.css"> <!-- change to match your file/naming structure -->
 	    <script src="/webjars/jquery/jquery.min.js"></script>
 	    <script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
 	</head>
@@ -26,7 +26,7 @@
       					<span class="navbar-toggler-icon"></span>
     				</button>
    					<div class="collapse navbar-collapse" id="navbarBasic">
-      					<ul class="navbar-nav me-auto mb-2 mb-xl-0 offset-8">
+      					<ul class="navbar-nav me-auto mb-2 mb-xl-0 offset-7">
         					<li class="nav-item">
           						<a class="nav-link" aria-current="page" href="/games">Your Games</a>
         					</li>
@@ -43,7 +43,7 @@
         			</div>
 				</div>
 			</nav>
-	   		<h1>Specific Game</h1>
+			<h1>Specific Game</h1>
 			
 		</div>
 	</body>
