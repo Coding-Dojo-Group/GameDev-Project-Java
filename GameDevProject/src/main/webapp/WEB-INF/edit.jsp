@@ -13,13 +13,13 @@
 		<meta charset="UTF-8">
 	    <title>Update Game</title>
 	    <link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css">
-		<link rel="stylesheet" href="/css/main.css"> <!-- change to match your file/naming structure -->
+		<link rel="stylesheet" href="/css/style.css">
 	    <script src="/webjars/jquery/jquery.min.js"></script>
 	    <script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
 	</head>
-	<body>
-   		<div class="container">
-			<nav class="navbar navbar-expand-xl navbar-light">
+	<body id="newBackground">
+   		<div class="container vh-100">
+			<nav class="navbar navbar-expand-xl navbar-dark">
 				<div class="container-fluid">
 					<a href="/home" class="navbar-brand">DGS</a>
 					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBasic" aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,7 +43,60 @@
         			</div>
 				</div>
 			</nav>
-			<h1>Edit a Game</h1>
+			<div class="d-flex align-items-center justify-content-around h-75 my-5">
+				<div class="h-100 w-50 d-flex align-items-center justify-content-around" id="gameTable">
+					<form:form action="/games/new/game" method="POST" modelAttribute="updateGame" class="h-75 w-75 d-flex flex-column justify-content-evenly">
+						<input type="hidden" name="_method" value="put">
+						<div class="row mb-3">
+							<form:label path="title" class="col-sm-2 col-form-label mx-2">Title</form:label>
+							<div class="col-sm-9">
+								<form:input type="text" class="form-control" path="title" value="${editGame.title}"/>
+							</div>
+						</div>
+						<div class="row mb-1">
+							<form:errors path="title" class="text-danger"/>
+						</div>
+						<div class="row mb-3">
+							<form:label path="language" class="col-sm-2 col-form-label mx-2">Language</form:label>
+							<div class="col-sm-9">
+								<form:input type="text" class="form-control" path="language" value="${editGame.language}"/>
+							</div>
+						</div>
+						<div class="row mb-1">
+							<form:errors path="language" class="text-danger"/>
+						</div>
+						<fieldset class="row mb-3">
+							<legend class="col-form-label col-sm-3 pt-0 mx-2">Co-Op?</legend>
+							<div class="col-sm-8">
+								<div class="form-check d-flex justify-content-evenly">
+									<div>
+										<form:radiobutton path="multiplayer" value="true"/>Yes
+									</div>
+									<div>
+										<form:radiobutton path="multiplayer" value="false"/>No
+									</div>
+								</div>
+							</div>
+						</fieldset>
+						<div class="row mb-1">
+							<form:errors path="multiplayer" class="text-danger"/>
+						</div>
+						<div class="row mb-3">
+							<form:label path="genre" class="col-sm-2 col-form-label mx-2">Genre</form:label>
+							<div class="col-sm-9">
+								<form:input type="text" class="form-control" path="genre" value="${editGame.genre}"/>
+							</div>
+						</div>
+						<div class="row mb-1">
+							<form:errors path="genre" class="text-danger"/>
+						</div>
+						<button type="submit" class="btn btn-primary">Update Game!</button>
+					</form:form>
+				</div>
+				<div class="h-25 w-50 d-flex align-items-center justify-content-center" style="font-family: 'Press Start 2P';">
+					<h1>Edit a Game</h1>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
