@@ -44,6 +44,10 @@ public class GameController {
 	// New Game
 	@GetMapping("/new")
 	public String newGame(@ModelAttribute("newGame")GameMaker newGame, Model model, HttpSession session) {
+		
+		if (session.getAttribute("userId") == null) {
+			return "redirect:/";
+		}
 		User user = userServ.findById((Long)session.getAttribute("userId"));
 		model.addAttribute("user", user);
 		return "/new.jsp";
@@ -51,11 +55,14 @@ public class GameController {
 	
 	// Create New Game
 	@PostMapping("/new/game")
-	public String postGame(@Valid @ModelAttribute("newGame")GameMaker newGame, BindingResult result) {
+	public String postGame(@Valid @ModelAttribute("newGame")GameMaker newGame, BindingResult result, HttpSession session) {
 		if(result.hasErrors()) {
 			return "/new.jsp";
 		}
-		gServ.create(newGame);
+		
+		User user = userServ.findById((Long) session.getAttribute("userId"));
+		
+		gServ.create(newGame, user);
 		return "redirect:/games";
 	}
 	

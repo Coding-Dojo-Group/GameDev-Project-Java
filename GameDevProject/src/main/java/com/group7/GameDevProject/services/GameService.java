@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.group7.GameDevProject.models.GameMaker;
+import com.group7.GameDevProject.models.User;
 import com.group7.GameDevProject.repositories.GameRepository;
 
 @Service
@@ -24,7 +25,8 @@ public class GameService {
 	public List<GameMaker> allGames(){
 		return gRepo.findAll();
 	}
-	public GameMaker create(GameMaker game) {
+	public GameMaker create(GameMaker game, User user) {
+		game.setUser(user);
 		return gRepo.save(game);
 	}
 	public GameMaker update(GameMaker game) {

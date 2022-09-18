@@ -48,55 +48,53 @@
 				<div class="h-25 w-50 d-flex align-items-center justify-content-center" style="font-family: 'Press Start 2P';">
 					<h1>New Game</h1>
 				</div>
-				<div class="h-100 w-50 d-flex align-items-center justify-content-center" id="gameTable">
-					<form>
+				<div class="h-100 w-50 d-flex align-items-center justify-content-around" id="gameTable">
+					<form:form action="/games/new/game" method="POST" modelAttribute="newGame" class="h-75 w-75 d-flex flex-column justify-content-evenly">
 						<div class="row mb-3">
-						    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-						    <div class="col-sm-10">
-						      <input type="text" class="form-control" id="inputEmail3">
-						    </div>
-						  </div>
-						  <div class="row mb-3">
-						    <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
-						    <div class="col-sm-10">
-						      <input type="password" class="form-control" id="inputPassword3">
-						    </div>
-						  </div>
-						  <fieldset class="row mb-3">
-						    <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
-						    <div class="col-sm-10">
-						      <div class="form-check">
-						        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked="">
-						        <label class="form-check-label" for="gridRadios1">
-						          First radio
-						        </label>
-						      </div>
-						      <div class="form-check">
-						        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-						        <label class="form-check-label" for="gridRadios2">
-						          Second radio
-						        </label>
-						      </div>
-						      <div class="form-check disabled">
-						        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled="">
-						        <label class="form-check-label" for="gridRadios3">
-						          Third disabled radio
-						        </label>
-						      </div>
-						    </div>
-						  </fieldset>
-						  <div class="row mb-3">
-						    <div class="col-sm-10 offset-sm-2">
-						      <div class="form-check">
-						        <input class="form-check-input" type="checkbox" id="gridCheck1">
-						        <label class="form-check-label" for="gridCheck1">
-						          Example checkbox
-						        </label>
-						      </div>
-						    </div>
-						  </div>
-						<button type="submit" class="btn btn-primary">Sign in</button>
-					</form>
+							<form:label path="title" class="col-sm-2 col-form-label mx-2">Title</form:label>
+							<div class="col-sm-9">
+								<form:input type="text" class="form-control" path="title"/>
+							</div>
+						</div>
+						<div class="row mb-1">
+							<form:errors path="title" class="text-danger"/>
+						</div>
+						<div class="row mb-3">
+							<form:label path="language" class="col-sm-2 col-form-label mx-2">Language</form:label>
+							<div class="col-sm-9">
+								<form:input type="text" class="form-control" path="language"/>
+							</div>
+						</div>
+						<div class="row mb-1">
+							<form:errors path="language" class="text-danger"/>
+						</div>
+						<fieldset class="row mb-3">
+							<legend class="col-form-label col-sm-3 pt-0 mx-2">Co-Op?</legend>
+							<div class="col-sm-8">
+								<div class="form-check d-flex justify-content-evenly">
+									<div>
+										<form:radiobutton path="multiplayer" value="true"/>Yes
+									</div>
+									<div>
+										<form:radiobutton path="multiplayer" value="false"/>No
+									</div>
+								</div>
+							</div>
+						</fieldset>
+						<div class="row mb-1">
+							<form:errors path="multiplayer" class="text-danger"/>
+						</div>
+						<div class="row mb-3">
+							<form:label path="genre" class="col-sm-2 col-form-label mx-2">Genre</form:label>
+							<div class="col-sm-9">
+								<form:input type="text" class="form-control" path="genre"/>
+							</div>
+						</div>
+						<div class="row mb-1">
+							<form:errors path="genre" class="text-danger"/>
+						</div>
+						<button type="submit" class="btn btn-primary">Create Game!</button>
+					</form:form>
 				</div>
 			</div>
 			
