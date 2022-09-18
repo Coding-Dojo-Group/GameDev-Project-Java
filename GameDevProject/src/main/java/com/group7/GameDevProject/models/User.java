@@ -2,6 +2,7 @@ package com.group7.GameDevProject.models;
 
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
@@ -39,24 +40,14 @@ public class User {
     @Size(min=8, max=128, message="Confirm Password must be between 8 and 128 characters")
     private String confirm;
     
-    @OneToMany(mappedBy="user", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy="user", fetch = FetchType.LAZY, cascade=CascadeType.ALL)
     private List<GameMaker> games;
-  
+    
+    @OneToMany(mappedBy="commentOwner", fetch= FetchType.LAZY, cascade=CascadeType.ALL)
+    private List<Comment> comments;
+    
     public User() {}
     
-    
-    
-	public List<GameMaker> getGames() {
-		return games;
-	}
-
-
-
-	public void setGames(List<GameMaker> games) {
-		this.games = games;
-	}
-
-
 
 	public Long getId() {
 		return id;
@@ -98,6 +89,22 @@ public class User {
 		this.confirm = confirm;
 	}
     
+	public List<GameMaker> getGames() {
+		return games;
+	}
+
+	public void setGames(List<GameMaker> games) {
+		this.games = games;
+	}
+
+	public List<Comment> getComments() {
+		return comments;
+	}
+
+
+	public void setComments(List<Comment> comments) {
+		this.comments = comments;
+	}
    
   
 }
