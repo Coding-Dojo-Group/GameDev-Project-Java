@@ -69,7 +69,7 @@ public class GameController {
 	
 	// Edit Game
 	@GetMapping("/edit/{id}")
-	public String editGame(@PathVariable("id")Long id, Model model) {
+	public String editGame(@PathVariable("id")Long id, Model model, @ModelAttribute("updateGame") GameMaker updateGame) {
 		GameMaker editGame = gServ.findById(id);
 		model.addAttribute("editGame", editGame);
 		return "/edit.jsp";
