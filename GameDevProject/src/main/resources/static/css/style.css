@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-#test {
+#newBackground {
 	background-image: url(/images/8bitbackground1.png);
 	background-size: cover;
 	color: white;
@@ -10,4 +10,9 @@
 .goButton {
 	background-color: #417B5A;
 	border-color: #417B5A;
+}
+
+#gameTable {
+	background-color: #02476E;
+	border-radius: 30px;
 }
