@@ -17,7 +17,7 @@
 		<meta charset="ISO-8859-1">
 		<title>Home</title>
 	</head>
-	<body id="test">
+	<body id="newBackground">
 		<div class="container vh-100">
 			<nav class="navbar navbar-expand-xl navbar-dark">
 				<div class="container-fluid">

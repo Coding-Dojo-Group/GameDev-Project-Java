@@ -14,7 +14,7 @@
 	    <script src="/webjars/jquery/jquery.min.js"></script>
 	    <script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
 	</head>
-	<body id="test">
+	<body id="newBackground">
 		<div class="container vh-100">
 			<nav class="navbar navbar-expand-xl navbar-dark">
 				<div class="container-fluid">
@@ -41,8 +41,8 @@
 				</div>
 			</nav>
 			<div class="d-flex align-items-center justify-content-around h-75 my-5">
-				<div class="h-75 w-75 d-flex align-items-center justify-content-center">
-					<div class="w-75 px-3 pt-3" id="gameTable">
+				<div class="h-75 w-75 d-flex align-items-center justify-content-center" id="gameTable">
+					<div class="w-100 px-3 pt-3">
 						<table class="table text-white">
 							<thead>
 								<tr>
