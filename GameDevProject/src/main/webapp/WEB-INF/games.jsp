@@ -9,13 +9,14 @@
 		<meta charset="UTF-8">
 	    <title>Your Games</title>
 	    <link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css">
+	    <link href='https://fonts.googleapis.com/css?family=Press Start 2P' rel='stylesheet'>
 		<link rel="stylesheet" href="/css/style.css">
 	    <script src="/webjars/jquery/jquery.min.js"></script>
 	    <script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
 	</head>
-	<body>
-		<div class="container">
-			<nav class="navbar navbar-expand-xl navbar-light">
+	<body id="test">
+		<div class="container vh-100">
+			<nav class="navbar navbar-expand-xl navbar-dark">
 				<div class="container-fluid">
 					<a href="/home" class="navbar-brand">DGS</a>
 					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBasic" aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,9 +40,52 @@
         			</div>
 				</div>
 			</nav>
-			<h1>Your Games</h1>
-			
-			<a href="/games/new">New Game</a>
+			<div class="d-flex align-items-center justify-content-around h-75 my-5">
+				<div class="h-75 w-75 d-flex align-items-center justify-content-center">
+					<div class="w-75 px-3 pt-3" id="gameTable">
+						<table class="table text-white">
+							<thead>
+								<tr>
+									<th>Title</th>
+									<th>Genre</th>
+									<th>Language</th>
+									<th>Co-Op?</th>
+									<th>Actions</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Example</td>
+									<td>Example</td>
+									<td>Example</td>
+									<td>Example</td>
+									<td>Example</td>
+								</tr>
+								<tr>
+									<td>Example</td>
+									<td>Example</td>
+									<td>Example</td>
+									<td>Example</td>
+									<td>Example</td>
+								</tr>
+								<tr>
+									<td>Example</td>
+									<td>Example</td>
+									<td>Example</td>
+									<td>Example</td>
+									<td>Example</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="h-25 w-50 d-flex flex-column align-items-center justify-content-around" style="font-family: 'Press Start 2P';">
+					<h1>Your Games</h1>
+					<a href="/games/new">
+						<button class="btn btn-success goButton">New Game</button>
+					</a>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
