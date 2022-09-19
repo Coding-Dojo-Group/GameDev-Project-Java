@@ -19,7 +19,7 @@
 	</head>
 	<body id="newBackground" class="d-flex align-items-center justify-content-center vh-100">
 		
-		<div class="container w-50 d-flex flex-column align-items-center" id="gameTable">
+		<div class="container w-50 h-75 d-flex flex-column align-items-center justify-content-evenly" id="gameTable">
 			<h1>Welcome!</h1>
 			<div class="d-flex justify-content-around w-100">
 				<div class="register">
@@ -38,15 +38,15 @@
 						<div class="form-group">
 							<form:label path="password">Password</form:label>
 							<form:errors class="text-danger" path="password" />
-							<form:input class="form-control" path="password" />
+							<form:input class="form-control" path="password" type="password"/>
 						</div>
 						<div class="form-group">
 							<form:label path="confirm">Confirm PW</form:label>
 							<form:errors class="text-danger" path="confirm" />
-							<form:input class="form-control" path="confirm" />
+							<form:input class="form-control" path="confirm" type="password"/>
 						</div>
 						<div class="mt-2 mb-3">
-						<form:button>Register</form:button>
+						<form:button class="btn btn-success" id="goButton">Register</form:button>
 						</div>
 					</form:form>
 				</div>
@@ -64,10 +64,10 @@
 						<div class="form-group">
 							<form:label path="password">Password</form:label>
 							<form:errors class="text-danger" path="password" />
-							<form:input class="form-control" path="password" />
+							<form:input class="form-control" path="password" type="password"/>
 						</div>
 						<div class="mt-2">
-							<form:button>Login</form:button>
+							<form:button class="btn btn-success" id="goButton">Login</form:button>
 						</div>
 					</form:form>
 				</div>
