@@ -13,13 +13,13 @@
 		<meta charset="UTF-8">
 	    <title>[Game Title]</title>
 	    <link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css">
-		<link rel="stylesheet" href="/css/style.css"> <!-- change to match your file/naming structure -->
+		<link rel="stylesheet" href="/css/style.css">
 	    <script src="/webjars/jquery/jquery.min.js"></script>
 	    <script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
 	</head>
-	<body>
-		<div class="container">
-			<nav class="navbar navbar-expand-xl navbar-light">
+	<body id="newBackground">
+		<div class="container vh-100">
+			<nav class="navbar navbar-expand-xl navbar-dark">
 				<div class="container-fluid">
 					<a href="/home" class="navbar-brand">DGS</a>
 					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBasic" aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,8 +43,23 @@
         			</div>
 				</div>
 			</nav>
-			<h1>Specific Game</h1>
-			
+			<div class="d-flex align-items-center justify-content-around h-75 my-5" style="font-family: 'Press Start 2P';">
+				<div class="h-100 w-50 d-flex flex-column align-items-center justify-content-around" id="gameTable">
+					<div class="row mb-3">Language: ${game.language}</div>
+					<c:choose>
+						<c:when test="${game.multiplayer == true}">
+							<div class="row mb-3">Co-Op? Yes!</div>
+						</c:when>
+						<c:otherwise>
+							<div class="row mb-3">Co-Op? No</div>
+						</c:otherwise>
+					</c:choose>
+					<div class="row mb-3">Genre: ${game.genre}</div>
+				</div>
+				<div class="h-25 w-25 d-flex align-items-center justify-content-center">
+					<h1>${game.title}</h1>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
