@@ -5,72 +5,73 @@
 <%@ page isErrorPage="true"%>
 <!DOCTYPE html>
 <html>
-<head>
-<!-- for Bootstrap CSS -->
-<link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css" />
-<!-- YOUR own local CSS -->
-<link rel="stylesheet" href="/css/style.css" />
-<!-- For any Bootstrap that uses JS or jQuery-->
-<script src="/webjars/jquery/jquery.min.js"></script>
-<script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
-<meta charset="ISO-8859-1">
-<title>reserve</title>
-</head>
-<body class="bg-secondary">
-<div class="container bg-white w-50">
-
-	<h1>Welcome!</h1>
-	<div class="d-flex justify-content-around">
-		<div class="register">
-			<h3>Register</h3>
-			<form:form method="post" action="/register" modelAttribute="newUser">
-				<div class="form-group">
-					<form:label path="userName">User Name</form:label>
-					<form:errors class="text-danger" path="userName" />
-					<form:input class="form-control" path="userName" />
-				</div>
-				<div class="form-group">				
-					<form:label path="email">Email</form:label>
-					<form:errors class="text-danger" path="email" />
-					<form:input class="form-control" path="email" />
-				</div>
-				<div class="form-group">
-					<form:label path="password">Password</form:label>
-					<form:errors class="text-danger" path="password" />
-					<form:input class="form-control" path="password" />
-				</div>
-				<div class="form-group">
-					<form:label path="confirm">Confirm PW</form:label>
-					<form:errors class="text-danger" path="confirm" />
-					<form:input class="form-control" path="confirm" />
-				</div>
-				<div class="mt-2 mb-3">
-				<form:button>Register</form:button>
-				</div>
-			</form:form>
-		</div>
-		<div>
+	<head>
+		<!-- for Bootstrap CSS -->
+		<link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css" />
+		<!-- YOUR own local CSS -->
+		<link rel="stylesheet" href="/css/style.css" />
+		<link href='https://fonts.googleapis.com/css?family=Press Start 2P' rel='stylesheet'>	
+		<!-- For any Bootstrap that uses JS or jQuery-->
+		<script src="/webjars/jquery/jquery.min.js"></script>
+		<script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+		<meta charset="ISO-8859-1">
+		<title>Login</title>
+	</head>
+	<body id="newBackground" class="d-flex align-items-center justify-content-center vh-100">
 		
-		</div>
-		<div class="login ">
-			<h3>Login</h3>
-			<form:form method="post" action="/login" modelAttribute="newLogin">
-			<div class="form-group">
-				<form:label path="email">Email</form:label>
-				<form:errors class="text-danger" path="email" />
-				<form:input class="form-control" path="email" />
+		<div class="container w-50 d-flex flex-column align-items-center" id="gameTable">
+			<h1>Welcome!</h1>
+			<div class="d-flex justify-content-around w-100">
+				<div class="register">
+					<h3>Register</h3>
+					<form:form method="post" action="/register" modelAttribute="newUser">
+						<div class="form-group">
+							<form:label path="userName">User Name</form:label>
+							<form:errors class="text-danger" path="userName" />
+							<form:input class="form-control" path="userName" />
+						</div>
+						<div class="form-group">				
+							<form:label path="email">Email</form:label>
+							<form:errors class="text-danger" path="email" />
+							<form:input class="form-control" path="email" />
+						</div>
+						<div class="form-group">
+							<form:label path="password">Password</form:label>
+							<form:errors class="text-danger" path="password" />
+							<form:input class="form-control" path="password" />
+						</div>
+						<div class="form-group">
+							<form:label path="confirm">Confirm PW</form:label>
+							<form:errors class="text-danger" path="confirm" />
+							<form:input class="form-control" path="confirm" />
+						</div>
+						<div class="mt-2 mb-3">
+						<form:button>Register</form:button>
+						</div>
+					</form:form>
+				</div>
+				<div>
+				
+				</div>
+				<div class="login ">
+					<h3>Login</h3>
+					<form:form method="post" action="/login" modelAttribute="newLogin">
+					<div class="form-group">
+						<form:label path="email">Email</form:label>
+						<form:errors class="text-danger" path="email" />
+						<form:input class="form-control" path="email" />
+					</div>
+						<div class="form-group">
+							<form:label path="password">Password</form:label>
+							<form:errors class="text-danger" path="password" />
+							<form:input class="form-control" path="password" />
+						</div>
+						<div class="mt-2">
+							<form:button>Login</form:button>
+						</div>
+					</form:form>
+				</div>
 			</div>
-				<div class="form-group">
-					<form:label path="password">Password</form:label>
-					<form:errors class="text-danger" path="password" />
-					<form:input class="form-control" path="password" />
-				</div>
-				<div class="mt-2">
-					<form:button>Login</form:button>
-				</div>
-			</form:form>
 		</div>
-	</div>
-</div>
-</body>
+	</body>
 </html>
