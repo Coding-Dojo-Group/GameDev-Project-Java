@@ -45,7 +45,7 @@
 			</nav>
 			<div class="d-flex align-items-center justify-content-around h-75 my-5">
 				<div class="h-100 w-50 d-flex align-items-center justify-content-around" id="gameTable">
-					<form:form action="/games/new/game" method="POST" modelAttribute="updateGame" class="h-75 w-75 d-flex flex-column justify-content-evenly">
+					<form:form action="/games/edit/${editGame.id}" method="POST" modelAttribute="editGame" class="h-75 w-75 d-flex flex-column justify-content-evenly">
 						<input type="hidden" name="_method" value="put">
 						<div class="row mb-3">
 							<form:label path="title" class="col-sm-2 col-form-label mx-2">Title</form:label>
@@ -91,6 +91,8 @@
 							<form:errors path="genre" class="text-danger"/>
 						</div>
 						<button type="submit" class="btn btn-primary">Update Game!</button>
+						<form:errors path="user"/>
+						<form:input type="hidden" path="user" value="${user.id}"/>
 					</form:form>
 				</div>
 				<div class="h-25 w-50 d-flex align-items-center justify-content-center" style="font-family: 'Press Start 2P';">

@@ -70,19 +70,19 @@ public class GameController {
 	
 	// Edit Game
 	@GetMapping("/edit/{id}")
-	public String editGame(@PathVariable("id")Long id, Model model, @ModelAttribute("updateGame") GameMaker updateGame) {
+	public String editGame(@PathVariable("id")Long id, Model model) {
 		GameMaker editGame = gServ.findById(id);
 		model.addAttribute("editGame", editGame);
-		return "/edit.jsp";
+		return "edit.jsp";
 	}
 	
 	// Confirm Edit
 	@PutMapping("/edit/{id}")
-	public String updateGame(@Valid @ModelAttribute("updateGame")GameMaker updateGame, BindingResult result) {
+	public String updateGame(@Valid @ModelAttribute("editGame")GameMaker editGame, BindingResult result) {
 		if(result.hasErrors()) {
-			return "/edit.jsp";
+			return "edit.jsp";
 		}
-		gServ.update(updateGame);
+		gServ.update(editGame);
 		return "redirect:/games";
 	}
 	

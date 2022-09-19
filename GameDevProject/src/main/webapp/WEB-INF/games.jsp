@@ -65,9 +65,9 @@
 												<c:if test="${game.multiplayer==false }">No</c:if>
 											</td>
 											<td>
-											<a href="/games/view/${game.id }">View</a> 
-											<a href="#">Edit</a> 
-											<a href="#">Delete</a>
+											<a href="/games/view/${game.id}">View</a> 
+											<a href="/games/edit/${game.id}">Edit</a> 
+											<a href="/games/${game.id}/delete">Delete</a>
 											
 										</tr>
 									</c:if>
