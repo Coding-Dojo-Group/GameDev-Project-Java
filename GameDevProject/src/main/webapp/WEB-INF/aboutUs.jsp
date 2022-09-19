@@ -52,29 +52,46 @@
 				<div class="card w-25 h-50 mx-5 mb-3" id="gameTable">
 					<div class="card-body d-flex flex-column align-items-center justify-content-evenly">
 						<h5 class="card-title">James</h5>
-						<a href="https://github.com/NotJamesB" class="btn btn-success">Github</a>
-						<a href="#" class="btn" id="linkedInIcon">in</a>
+						<div class="d-flex align-items-center justify-content-evenly w-100">
+							<a href="https://github.com/NotJamesB" class="btn" id="githubIcon">
+								<img alt="github logo" src="/images/githubPixel.png" style="max-width: 3em; height: auto;">
+							</a>
+							<a href="#" class="btn" id="linkedInIcon">in</a>
+						</div>
 					</div>
 				</div>
 				<div class="card w-25 h-50 mx-5 mb-3" id="gameTable">
 					<div class="card-body d-flex flex-column align-items-center justify-content-evenly">
 						<h5 class="card-title">Xian</h5>
-						<a href="https://github.com/cottoncloud636" class="btn btn-success">Github</a>
-						<a href="#" class="btn" id="linkedInIcon">in</a>
+						<div class="d-flex align-items-center justify-content-evenly w-100">
+							<a href="https://github.com/cottoncloud636" class="btn" id="githubIcon">
+								<img alt="github logo" src="/images/githubPixel.png" style="max-width: 3em; height: auto;">
+							</a>
+							<a href="#" class="btn" id="linkedInIcon">in</a>
+						</div>
 					</div>
 				</div>
 				<div class="card w-25 h-50 mx-5 mb-3" id="gameTable">
 					<div class="card-body d-flex flex-column align-items-center justify-content-evenly">
 						<h5 class="card-title">Joseph</h5>
-						<a href="https://github.com/joseph-rexrode" class="btn btn-success">Github</a>
-						<a href="https://www.linkedin.com/in/joseph-rexrode/" class="btn" id="linkedInIcon">in</a>
+						<div class="d-flex align-items-center justify-content-evenly w-100">
+							<a href="https://github.com/joseph-rexrode" class="btn" id="githubIcon">
+								<img alt="github logo" src="/images/githubPixel.png" style="max-width: 3em; height: auto;">
+							</a>
+							<a href="https://www.linkedin.com/in/joseph-rexrode/" class="btn" id="linkedInIcon">in</a>
+						</div>
 					</div>
 				</div>
 				<div class="card w-25 h-50 mx-5 mb-3" id="gameTable">
 					<div class="card-body d-flex flex-column align-items-center justify-content-evenly">
 						<h5 class="card-title">Michael</h5>
-						<a href="https://github.com/michaeltestut" class="btn btn-success">Github</a>
-						<a href="https://www.linkedin.com/in/michael-testut" class="btn" id="linkedInIcon">in</a>
+						<div class="d-flex align-items-center justify-content-evenly w-100">
+							<a href="https://github.com/michaeltestut" class="btn" id="githubIcon">
+								<img alt="github logo" src="/images/githubPixel.png" style="max-width: 3em; height: auto;">
+							</a>
+							<a href="https://www.linkedin.com/in/michael-testut" class="btn" id="linkedInIcon">in</a>
+						</div>
+
 					</div>
 				</div>
 			</div>
