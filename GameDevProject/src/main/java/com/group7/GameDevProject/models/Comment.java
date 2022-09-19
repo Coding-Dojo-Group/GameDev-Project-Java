@@ -16,25 +16,26 @@ import javax.persistence.Table;
 import javax.validation.constraints.NotEmpty;
 
 @Entity
-@Table(name="comment")
+@Table(name="comments")
 public class Comment {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	@NotEmpty
+	@NotEmpty(message="comment cannot be blank")
 	private String content;
 	
 	@ManyToOne(fetch=FetchType.LAZY)
 	@JoinColumn(name="user_id")
-	private User commentOwner;
+	private User user;
 	
 	@ManyToOne(fetch=FetchType.LAZY)
 	@JoinColumn(name="game_id")
-	private GameMaker associatedGame;
+	private GameMaker game;
 	
 	@Column(updatable=false)
     private Date createdAt;
+	
     private Date updatedAt;
     
 	@PrePersist
@@ -63,14 +64,42 @@ public class Comment {
 		this.content = content;
 	}
 
-	public User getCommentOwner() {
-		return commentOwner;
+
+	
+	public User getUser() {
+		return user;
 	}
 
-	public void setCommentOwner(User commentOwner) {
-		this.commentOwner = commentOwner;
+	public void setUser(User user) {
+		this.user = user;
+	}
+
+	public GameMaker getGame() {
+		return game;
+	}
+
+	public void setGame(GameMaker game) {
+		this.game = game;
 	}
 	
+	
+
+	public Date getCreatedAt() {
+		return createdAt;
+	}
+
+	public void setCreatedAt(Date createdAt) {
+		this.createdAt = createdAt;
+	}
+
+	public Date getUpdatedAt() {
+		return updatedAt;
+	}
+
+	public void setUpdatedAt(Date updatedAt) {
+		this.updatedAt = updatedAt;
+	}
+
 	public Comment() {};
 	
 }

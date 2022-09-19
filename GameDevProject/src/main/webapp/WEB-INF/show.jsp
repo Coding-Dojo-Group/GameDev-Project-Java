@@ -11,7 +11,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-	    <title>[Game Title]</title>
+	    <title><c:out value="${game.title }"/></title>
 	    <link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css">
 		<link rel="stylesheet" href="/css/style.css">
 	    <script src="/webjars/jquery/jquery.min.js"></script>
@@ -60,6 +60,28 @@
 					<h1>${game.title}</h1>
 				</div>
 			</div>
+			
+				<!-- Added list of comments -->
+				<div>
+					<c:forEach var="comment" items="${game.comments }">
+						<div>
+							<c:out value="${comment.content }"/>
+							-<c:out value="${comment.user.userName }"/>
+							<fmt:formatDate value="${comment.createdAt}" pattern="MM/dd/yyyy hh:mm:ss a" />
+						</div>
+					</c:forEach>
+				</div>
+				
+							<!--Added Comment Box  -->
+				<div>
+					<form:form action="/games/${game.id }/addcomment" method="post" modelAttribute="newComment">
+						<form:textarea placeholder="add comment" path="content"/>
+						<form:errors path="content"/>
+						<form:input type="hidden" path="game" value="${game.id }"/>
+						<form:input type="hidden" path="user" value="${user.id }"/>
+						<input type="submit" value="add comment">
+					</form:form>
+				</div>
 		</div>
 	</body>
 </html>
