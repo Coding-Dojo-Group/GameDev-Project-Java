@@ -74,7 +74,7 @@
 					<div class="card-body d-flex flex-column align-items-center justify-content-evenly">
 						<h5 class="card-title">Michael</h5>
 						<a href="https://github.com/michaeltestut" class="btn btn-success">Github</a>
-						<a href="#" class="btn" id="linkedInIcon">in</a>
+						<a href="https://www.linkedin.com/in/michael-testut" class="btn" id="linkedInIcon">in</a>
 					</div>
 				</div>
 			</div>

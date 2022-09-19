@@ -64,7 +64,7 @@
 						<div class="form-group">
 							<form:label path="password">Password</form:label>
 							<form:errors class="text-danger" path="password" />
-							<form:input class="form-control" path="password" />
+							<form:input class="form-control" path="password"/>
 						</div>
 						<div class="mt-2">
 							<form:button>Login</form:button>

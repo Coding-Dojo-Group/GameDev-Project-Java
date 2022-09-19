@@ -43,7 +43,7 @@ public class User {
     @OneToMany(mappedBy="user", fetch = FetchType.LAZY, cascade=CascadeType.ALL)
     private List<GameMaker> games;
     
-    @OneToMany(mappedBy="commentOwner", fetch= FetchType.LAZY, cascade=CascadeType.ALL)
+    @OneToMany(mappedBy="user", fetch= FetchType.LAZY, cascade=CascadeType.ALL)
     private List<Comment> comments;
     
     public User() {}

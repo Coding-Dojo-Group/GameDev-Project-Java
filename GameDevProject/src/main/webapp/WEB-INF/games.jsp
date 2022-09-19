@@ -54,27 +54,24 @@
 								</tr>
 							</thead>
 							<tbody>
-								<tr>
-									<td>Example</td>
-									<td>Example</td>
-									<td>Example</td>
-									<td>Example</td>
-									<td>Example</td>
-								</tr>
-								<tr>
-									<td>Example</td>
-									<td>Example</td>
-									<td>Example</td>
-									<td>Example</td>
-									<td>Example</td>
-								</tr>
-								<tr>
-									<td>Example</td>
-									<td>Example</td>
-									<td>Example</td>
-									<td>Example</td>
-									<td>Example</td>
-								</tr>
+								<c:forEach var="game" items="${ games }">
+									<c:if test="${user.id==game.user.id }">
+										<tr>
+											<td><c:out value="${game.title }"/></td>
+											<td><c:out value="${game.genre}"/></td>
+											<td><c:out value="${game.language }"/></td>
+											<td>
+												<c:if test="${game.multiplayer==true }">Yes</c:if>
+												<c:if test="${game.multiplayer==false }">No</c:if>
+											</td>
+											<td>
+											<a href="/games/view/${game.id }">View</a> 
+											<a href="#">Edit</a> 
+											<a href="#">Delete</a>
+											
+										</tr>
+									</c:if>
+								</c:forEach>
 							</tbody>
 						</table>
 					</div>

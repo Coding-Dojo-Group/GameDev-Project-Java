@@ -39,9 +39,11 @@ public class GameMaker {
 	private User user;
 	
 	
-	@OneToMany(mappedBy="associatedGame",fetch=FetchType.LAZY, cascade=CascadeType.ALL)
+	@OneToMany(mappedBy="game",fetch=FetchType.LAZY, cascade=CascadeType.ALL)
 	private List<Comment> comments;
 	
+
+
 	public GameMaker() {}
 
 	public Long getId() {
@@ -90,6 +92,14 @@ public class GameMaker {
 
 	public void setUser(User user) {
 		this.user = user;
+	}
+	
+	public List<Comment> getComments() {
+		return comments;
+	}
+
+	public void setComments(List<Comment> comments) {
+		this.comments = comments;
 	}
 	
 }

@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.group7.GameDevProject.models.Comment;
 import com.group7.GameDevProject.models.GameMaker;
 import com.group7.GameDevProject.models.User;
 import com.group7.GameDevProject.services.GameService;
@@ -94,9 +95,11 @@ public class GameController {
 	
 	// Specific Game
 	@GetMapping("/view/{id}")
-	public String showGame(@PathVariable("id") Long id, HttpSession session, Model model) {
+	public String showGame(@PathVariable("id") Long id, HttpSession session, Model model, @ModelAttribute("newComment")Comment newComment) {
 		GameMaker viewGame = gServ.findById(id);
 		model.addAttribute("game", viewGame);
+		Long userId = (Long) session.getAttribute("userId");
+    	model.addAttribute("user", userServ.findById(userId));
 		return "show.jsp";
 	}
 	

@@ -49,24 +49,14 @@
 			</div>
 			
 			<div class="d-flex align-items-center justify-content-evenly h-75 w-100">
-				<div class="card w-25 h-50" id="gameTable">
-					<div class="card-body d-flex flex-column align-items-center justify-content-evenly">
-						<h5 class="card-title">Example</h5>
-						<a href="#" class="btn btn-success">Project 1</a>
+				<c:forEach var="game" items="${ games }">				
+					<div class="card w-25 h-50" id="gameTable">
+						<div class="card-body d-flex flex-column align-items-center justify-content-evenly">
+							<h5 class="card-title"><c:out value="${game.title }"/></h5>
+							<a href="#" class="btn btn-success">Project 1</a>
+						</div>
 					</div>
-				</div>
-				<div class="card w-25 h-50" id="gameTable">
-					<div class="card-body d-flex flex-column align-items-center justify-content-evenly">
-						<h5 class="card-title">Example</h5>
-						<a href="#" class="btn btn-success">Project 1</a>
-					</div>
-				</div>
-				<div class="card w-25 h-50" id="gameTable">
-					<div class="card-body d-flex flex-column align-items-center justify-content-evenly">
-						<h5 class="card-title">Example</h5>
-						<a href="#" class="btn btn-success">Project 1</a>
-					</div>
-				</div>
+				</c:forEach>
 			</div>
 		</div>
 	</body>
