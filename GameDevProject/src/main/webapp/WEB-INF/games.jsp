@@ -42,7 +42,7 @@
 			</nav>
 			<div class="d-flex align-items-center justify-content-around h-75 my-5">
 				<div class="h-75 w-75 d-flex align-items-center justify-content-center" id="gameTable">
-					<div class="w-100 px-3 pt-3">
+					<div class="w-100 px-3 pt-3 overflow-auto">
 						<table class="table text-white">
 							<thead>
 								<tr>
@@ -65,9 +65,9 @@
 												<c:if test="${game.multiplayer==false }">No</c:if>
 											</td>
 											<td>
-											<a href="/games/view/${game.id}">View</a> 
-											<a href="/games/edit/${game.id}">Edit</a> 
-											<a href="/games/${game.id}/delete">Delete</a>
+											<a href="/games/view/${game.id}" class="btn btn-primary infoButton">View</a> 
+											<a href="/games/edit/${game.id}" class="btn btn-success goButton">Edit</a> 
+											<a href="/games/${game.id}/delete" class="btn btn-danger delButton">Delete</a>
 											
 										</tr>
 									</c:if>

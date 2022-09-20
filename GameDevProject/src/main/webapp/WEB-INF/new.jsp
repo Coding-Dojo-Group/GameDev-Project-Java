@@ -93,7 +93,7 @@
 						<div class="row mb-1">
 							<form:errors path="genre" class="text-danger"/>
 						</div>
-						<button type="submit" class="btn btn-primary">Create Game!</button>
+						<button type="submit" class="btn btn-success goButton">Create Game!</button>
 					</form:form>
 				</div>
 			</div>
