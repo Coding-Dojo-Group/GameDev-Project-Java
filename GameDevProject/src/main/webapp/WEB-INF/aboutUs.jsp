@@ -19,7 +19,7 @@
 	    <script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
 	</head>
 	<body id="newBackground">
-		<div class="container vh-100">
+		<div class="container vh-100 overflow-auto">
 			<nav class="navbar navbar-expand-xl navbar-dark">
 				<div class="container-fluid">
 					<a href="/home" class="navbar-brand">DGS</a>
@@ -49,7 +49,7 @@
 			</div>
 			
 			<div class="d-flex flex-wrap align-items-center justify-content-evenly h-75 w-100">
-				<div class="card w-25 h-50 mx-5 mb-3" id="gameTable">
+				<div class="card mx-5 mb-3 newCard" id="gameTable">
 					<div class="card-body d-flex flex-column align-items-center justify-content-evenly">
 						<h5 class="card-title">James</h5>
 						<div class="d-flex align-items-center justify-content-evenly w-100">
@@ -60,7 +60,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="card w-25 h-50 mx-5 mb-3" id="gameTable">
+				<div class="card mx-5 mb-3 newCard" id="gameTable">
 					<div class="card-body d-flex flex-column align-items-center justify-content-evenly">
 						<h5 class="card-title">Xian</h5>
 						<div class="d-flex align-items-center justify-content-evenly w-100">
@@ -71,7 +71,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="card w-25 h-50 mx-5 mb-3" id="gameTable">
+				<div class="card newCard mx-5 mb-3" id="gameTable">
 					<div class="card-body d-flex flex-column align-items-center justify-content-evenly">
 						<h5 class="card-title">Joseph</h5>
 						<div class="d-flex align-items-center justify-content-evenly w-100">
@@ -82,7 +82,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="card w-25 h-50 mx-5 mb-3" id="gameTable">
+				<div class="card newCard mx-5 mb-3" id="gameTable">
 					<div class="card-body d-flex flex-column align-items-center justify-content-evenly">
 						<h5 class="card-title">Michael</h5>
 						<div class="d-flex align-items-center justify-content-evenly w-100">

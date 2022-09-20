@@ -17,11 +17,11 @@
 		<meta charset="ISO-8859-1">
 		<title>Login</title>
 	</head>
-	<body id="newBackground" class="d-flex align-items-center justify-content-center vh-100">
+	<body id="newBackground" class="d-flex align-items-center justify-content-center vh-100 overflow-auto">
 		
-		<div class="container w-50 h-75 d-flex flex-column align-items-center justify-content-evenly" id="gameTable">
+		<div class="container d-flex flex-column align-items-center justify-content-evenly containerMax" id="gameTable">
 			<h1>Welcome!</h1>
-			<div class="d-flex justify-content-around w-100">
+			<div class="d-flex justify-content-evenly w-100">
 				<div class="register">
 					<h3>Register</h3>
 					<form:form method="post" action="/register" modelAttribute="newUser">

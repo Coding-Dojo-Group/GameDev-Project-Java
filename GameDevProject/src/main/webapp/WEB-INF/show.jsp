@@ -43,8 +43,11 @@
         			</div>
 				</div>
 			</nav>
-			<div class="d-flex align-items-center justify-content-around h-75 my-5" style="font-family: 'Press Start 2P';">
-				<div class="h-100 w-50 d-flex flex-column align-items-center justify-content-around" id="gameTable">
+			<div class="d-flex flex-column align-items-center">
+				<h1>${game.title}</h1>
+			</div>
+			<div class="d-flex align-items-center justify-content-around h-75 my-5">
+				<div class="h-100 w-50 d-flex flex-column align-items-center justify-content-around" id="gameTable" style="font-family: 'Press Start 2P';">
 					<div class="row mb-3">Language: ${game.language}</div>
 					<c:choose>
 						<c:when test="${game.multiplayer == true}">
@@ -56,32 +59,32 @@
 					</c:choose>
 					<div class="row mb-3">Genre: ${game.genre}</div>
 				</div>
-				<div class="h-25 w-25 d-flex align-items-center justify-content-center">
-					<h1>${game.title}</h1>
+				<div class="h-100 w-50 d-flex flex-column align-items-start justify-content-between">
+					<!-- Added list of comments -->
+					<c:if test="${game.comments.size() > 0}">
+						<div class="mx-4 my-5 p-3 w-75 overflow-auto" id="gameTable">
+							<c:forEach var="comment" items="${game.comments }">
+								<div class="mb-3">
+									<c:out value="${comment.content }"/>
+									-<c:out value="${comment.user.userName }"/>
+									<fmt:formatDate value="${comment.createdAt}" pattern="MM/dd/yyyy hh:mm:ss a" />
+								</div>
+							</c:forEach>
+						</div>
+					</c:if>
+					
+								<!--Added Comment Box  -->
+					<div class="mx-3 my-5 p-3" style="font-family: 'Press Start 2P';">
+						<form:form action="/games/${game.id }/addcomment" method="post" modelAttribute="newComment">
+							<form:textarea placeholder="add comment here" path="content"/>
+							<form:errors path="content"/>
+							<form:input type="hidden" path="game" value="${game.id }"/>
+							<form:input type="hidden" path="user" value="${user.id }"/>
+							<input type="submit" class="btn btn-success goButton" value="add comment">
+						</form:form>
+					</div>
 				</div>
 			</div>
-			
-				<!-- Added list of comments -->
-				<div>
-					<c:forEach var="comment" items="${game.comments }">
-						<div>
-							<c:out value="${comment.content }"/>
-							-<c:out value="${comment.user.userName }"/>
-							<fmt:formatDate value="${comment.createdAt}" pattern="MM/dd/yyyy hh:mm:ss a" />
-						</div>
-					</c:forEach>
-				</div>
-				
-							<!--Added Comment Box  -->
-				<div>
-					<form:form action="/games/${game.id }/addcomment" method="post" modelAttribute="newComment">
-						<form:textarea placeholder="add comment" path="content"/>
-						<form:errors path="content"/>
-						<form:input type="hidden" path="game" value="${game.id }"/>
-						<form:input type="hidden" path="user" value="${user.id }"/>
-						<input type="submit" value="add comment">
-					</form:form>
-				</div>
 		</div>
 	</body>
 </html>
