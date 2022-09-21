@@ -22,7 +22,7 @@
 		<div class="container vh-100 overflow-auto">
 			<nav class="navbar navbar-expand-xl navbar-dark">
 				<div class="container-fluid">
-					<a href="/home" class="navbar-brand">DGS</a>
+					<a href="/home" class="navbar-brand">From GitHub to Gamers</a>
 					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBasic" aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation">
       					<span class="navbar-toggler-icon"></span>
     				</button>
@@ -52,20 +52,22 @@
 				<div class="card mx-5 mb-3 newCard" id="gameTable">
 					<div class="card-body d-flex flex-column align-items-center justify-content-evenly">
 						<h5 class="card-title">James</h5>
+						<img alt="profile picture" src="/images/James.png" style="max-width: 5em; height: auto;">
 						<div class="d-flex align-items-center justify-content-evenly w-100">
 							<a href="https://github.com/NotJamesB" class="btn" id="githubIcon">
-								<img alt="github logo" src="/images/James.png" style="max-width: 3em; height: auto;">
+								<img alt="github logo" src="/images/githubPixel.png" style="max-width: 3em; height: auto;">
 							</a>
-							<a href="#" class="btn" id="linkedInIcon">in</a>
+							<a href="https://www.linkedin.com/in/james-bucsko/" class="btn" id="linkedInIcon">in</a>
 						</div>
 					</div>
 				</div>
 				<div class="card mx-5 mb-3 newCard" id="gameTable">
 					<div class="card-body d-flex flex-column align-items-center justify-content-evenly">
 						<h5 class="card-title">Xian</h5>
+						<img alt="profile picture" src="/images/Xian.jpg" style="max-width: 5em; height: auto;">
 						<div class="d-flex align-items-center justify-content-evenly w-100">
 							<a href="https://github.com/cottoncloud636" class="btn" id="githubIcon">
-								<img alt="github logo" src="/images/Xian.jpg" style="max-width: 3em; height: auto;">
+								<img alt="github logo" src="/images/githubPixel.png" style="max-width: 3em; height: auto;">
 							</a>
 							<a href="#" class="btn" id="linkedInIcon">in</a>
 						</div>
@@ -74,9 +76,10 @@
 				<div class="card newCard mx-5 mb-3" id="gameTable">
 					<div class="card-body d-flex flex-column align-items-center justify-content-evenly">
 						<h5 class="card-title">Joseph</h5>
+						<img alt="profile picture" src="/images/Joseph.png" style="max-width: 5em; height: auto;">
 						<div class="d-flex align-items-center justify-content-evenly w-100">
 							<a href="https://github.com/joseph-rexrode" class="btn" id="githubIcon">
-								<img alt="github logo" src="/images/Joseph.png" style="max-width: 3em; height: auto;">
+								<img alt="github logo" src="/images/githubPixel.png" style="max-width: 3em; height: auto;">
 							</a>
 							<a href="https://www.linkedin.com/in/joseph-rexrode/" class="btn" id="linkedInIcon">in</a>
 						</div>
@@ -85,9 +88,10 @@
 				<div class="card newCard mx-5 mb-3" id="gameTable">
 					<div class="card-body d-flex flex-column align-items-center justify-content-evenly">
 						<h5 class="card-title">Michael</h5>
+						<img alt="profile picture" src="/images/Michael.png" style="max-width: 5em; height: auto;">
 						<div class="d-flex align-items-center justify-content-evenly w-100">
 							<a href="https://github.com/michaeltestut" class="btn" id="githubIcon">
-								<img alt="github logo" src="/images/Michael.png" style="max-width: 3em; height: auto;">
+								<img alt="github logo" src="/images/githubPixel.png" style="max-width: 3em; height: auto;">
 							</a>
 							<a href="https://www.linkedin.com/in/michael-testut" class="btn" id="linkedInIcon">in</a>
 						</div>
