@@ -19,7 +19,13 @@
 	</head>
 	<body id="newBackground" class="d-flex align-items-center justify-content-center vh-100">
 
-		<marquee behavior="scroll" scrollamount="16" ><p id="heading"> <img alt="star" src="/images/star.png" style="max-width: 2em; height: auto;"> If you like games, you have come to the right place. Let's get started!<p></marquee>
+		<marquee behavior="scroll" scrollamount="16">
+			<p id="heading">
+				<img alt="star" src="/images/star.png" style="max-width: 2em; height: auto; border-radius: 50%">
+				Bridging the gap between developers and gamers!
+				<img alt="star" src="/images/star.png" style="max-width: 2em; height: auto; border-radius: 50%">
+			</p>
+		</marquee>
 		<div class="container d-flex flex-column align-items-center justify-content-evenly containerMax" id="gameTable">
 			<h1>Welcome!</h1>
 			<div class="d-flex justify-content-around w-100">

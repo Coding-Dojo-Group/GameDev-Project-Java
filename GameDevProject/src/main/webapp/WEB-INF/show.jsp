@@ -21,7 +21,7 @@
 		<div class="container vh-100">
 			<nav class="navbar navbar-expand-xl navbar-dark">
 				<div class="container-fluid">
-					<a href="/home" class="navbar-brand">DGS</a>
+					<a href="/home" class="navbar-brand">From GitHub to Gamers</a>
 					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBasic" aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation">
       					<span class="navbar-toggler-icon"></span>
     				</button>
@@ -43,8 +43,8 @@
         			</div>
 				</div>
 			</nav>
-			<div class="d-flex flex-column align-items-center" >
-				<h1 >${game.title}</h1>
+			<div class="d-flex flex-column align-items-center" style="font-family: 'Press Start 2P';">
+				<h1>${game.title}</h1>
 			</div>
 			<div class="d-flex align-items-center justify-content-around h-75 my-5">
 				<div class="h-100 w-50 d-flex flex-column align-items-center justify-content-around" id="gameTable" style="font-family: 'Press Start 2P';">

@@ -22,7 +22,7 @@
 		<div class="container vh-100 overflow-auto">
 			<nav class="navbar navbar-expand-xl navbar-dark">
 				<div class="container-fluid">
-					<a href="/home" class="navbar-brand">DGS</a>
+					<a href="/home" class="navbar-brand">From GitHub to Gamers</a>
 					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBasic" aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation">
       					<span class="navbar-toggler-icon"></span>
     				</button>

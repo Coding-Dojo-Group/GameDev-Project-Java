@@ -36,6 +36,7 @@
 	animation: blinkingText 1.2s infinite;
 }
 
+
 @keyframes blinkingText{
     80%{     color: #000;    }
 }
@@ -80,6 +81,10 @@
 #gameTable {
 	background-color: #02476E;
 	border-radius: 30px;
+}
+
+#gameTable:hover {
+	box-shadow: 0 0px 5px 0 white;
 }
 
 #linkedInIcon {
