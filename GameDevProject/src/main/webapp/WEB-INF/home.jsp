@@ -44,7 +44,7 @@
 				</div>
 			</nav>
 			<div class="d-flex h-75 justify-content-center" style="font-family: 'Press Start 2P';">
-				<h1 class="align-self-center">hello, ${user.userName}</h1>
+				<h1 class="align-self-center" id="blinkings">hello, ${user.userName}</h1>
 			</div>
 			<div class="d-flex justify-content-end align-items-center">
 				<a href="/games/new">

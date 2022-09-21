@@ -54,7 +54,7 @@
 						<h5 class="card-title">James</h5>
 						<div class="d-flex align-items-center justify-content-evenly w-100">
 							<a href="https://github.com/NotJamesB" class="btn" id="githubIcon">
-								<img alt="github logo" src="/images/githubPixel.png" style="max-width: 3em; height: auto;">
+								<img alt="github logo" src="/images/James.png" style="max-width: 3em; height: auto;">
 							</a>
 							<a href="#" class="btn" id="linkedInIcon">in</a>
 						</div>
@@ -65,7 +65,7 @@
 						<h5 class="card-title">Xian</h5>
 						<div class="d-flex align-items-center justify-content-evenly w-100">
 							<a href="https://github.com/cottoncloud636" class="btn" id="githubIcon">
-								<img alt="github logo" src="/images/githubPixel.png" style="max-width: 3em; height: auto;">
+								<img alt="github logo" src="/images/Xian.jpg" style="max-width: 3em; height: auto;">
 							</a>
 							<a href="#" class="btn" id="linkedInIcon">in</a>
 						</div>
@@ -76,7 +76,7 @@
 						<h5 class="card-title">Joseph</h5>
 						<div class="d-flex align-items-center justify-content-evenly w-100">
 							<a href="https://github.com/joseph-rexrode" class="btn" id="githubIcon">
-								<img alt="github logo" src="/images/githubPixel.png" style="max-width: 3em; height: auto;">
+								<img alt="github logo" src="/images/Joseph.png" style="max-width: 3em; height: auto;">
 							</a>
 							<a href="https://www.linkedin.com/in/joseph-rexrode/" class="btn" id="linkedInIcon">in</a>
 						</div>
@@ -87,7 +87,7 @@
 						<h5 class="card-title">Michael</h5>
 						<div class="d-flex align-items-center justify-content-evenly w-100">
 							<a href="https://github.com/michaeltestut" class="btn" id="githubIcon">
-								<img alt="github logo" src="/images/githubPixel.png" style="max-width: 3em; height: auto;">
+								<img alt="github logo" src="/images/Michael.png" style="max-width: 3em; height: auto;">
 							</a>
 							<a href="https://www.linkedin.com/in/michael-testut" class="btn" id="linkedInIcon">in</a>
 						</div>
