@@ -20,10 +20,11 @@
 	<body id="newBackground" class="d-flex align-items-center justify-content-center vh-100">
 
 		<marquee behavior="scroll" scrollamount="16" ><p id="heading"> <img alt="star" src="/images/star.png" style="max-width: 2em; height: auto;"> If you like games, you have come to the right place. Let's get started!<p></marquee>
-		<div class="container w-50 h-75 d-flex flex-column align-items-center justify-content-evenly" id="gameTable">
+		<div class="container d-flex flex-column align-items-center justify-content-evenly containerMax" id="gameTable">
 			<h1>Welcome!</h1>
 			<div class="d-flex justify-content-around w-100">
 				<div class="register sm-2 lg-1">
+
 					<h3>Register</h3>
 					<form:form method="post" action="/register" modelAttribute="newUser">
 						<div class="form-group">
