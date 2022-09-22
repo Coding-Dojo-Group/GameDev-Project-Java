@@ -96,6 +96,10 @@ public class GameController {
 	// Specific Game
 	@GetMapping("/view/{id}")
 	public String showGame(@PathVariable("id") Long id, HttpSession session, Model model, @ModelAttribute("newComment")Comment newComment) {
+		if(session.getAttribute("userId")==null)
+    	{
+    		return "redirect:/logout";
+    		}
 		GameMaker viewGame = gServ.findById(id);
 		model.addAttribute("game", viewGame);
 		Long userId = (Long) session.getAttribute("userId");
@@ -106,6 +110,10 @@ public class GameController {
 	// View Community Games
 	@GetMapping("/community")
 	public String community(HttpSession session, Model model) {
+		if(session.getAttribute("userId")==null)
+    	{
+    		return "redirect:/logout";
+    		}
 		Long userId = (Long)session.getAttribute("userId");
 		model.addAttribute("user", userServ.findById(userId));
 		model.addAttribute("games", gServ.allGames());
