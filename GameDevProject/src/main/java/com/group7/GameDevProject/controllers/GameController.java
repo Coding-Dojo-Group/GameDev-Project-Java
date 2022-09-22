@@ -112,7 +112,7 @@ public class GameController {
 	public String community(HttpSession session, Model model) {
 		if(session.getAttribute("userId")==null)
     	{
-    		return "redirect:/logout";
+    		return "redirect:/";
     		}
 		Long userId = (Long)session.getAttribute("userId");
 		model.addAttribute("user", userServ.findById(userId));
