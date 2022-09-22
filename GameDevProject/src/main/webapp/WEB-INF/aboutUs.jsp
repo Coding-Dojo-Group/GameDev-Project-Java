@@ -69,7 +69,7 @@
 							<a href="https://github.com/cottoncloud636" class="btn" id="githubIcon">
 								<img alt="github logo" src="/images/githubPixel.png" style="max-width: 3em; height: auto;">
 							</a>
-							<a href="#" class="btn" id="linkedInIcon">in</a>
+							<a href="https://www.linkedin.com/in/xian-natasha-zhou-b9612391/" class="btn" id="linkedInIcon">in</a>
 						</div>
 					</div>
 				</div>
