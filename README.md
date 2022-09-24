@@ -27,4 +27,16 @@ Web Application where developers can share their game ideas!
 
 ## Current Product Backlog:
 
-- List of backlog items here
+- Front-End:
+  - Additional retro-videogame styled navigation throughout the app
+  - Device responsiveness
+  - More JS functionality
+
+- Back-End:
+  - Adding more parameters to Game model
+    1. Github repo link (or show specifics for developer's profile through GitHub API)
+    2. Connect to 3rd party API to suggest games of a particular genre when selected
+  - Add rating system to comments section
+  - Add ability to like comments or games, *or* have unique reactions
+
+
